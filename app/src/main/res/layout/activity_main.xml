@@ -39,10 +39,10 @@
             android:layout_width="316dp"
             android:layout_height="73dp"
 
-            android:text="я ебал камаз"
-            android:textColor="@color/white"
-android:gravity="center"
             android:fontFamily="@font/oboto"
+            android:gravity="center"
+            android:text="я ебал камаз2"
+            android:textColor="@color/dick"
             android:textSize="32sp" />
 
         <TextView
