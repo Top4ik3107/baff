@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             app:cornerRadius="10dp"
-            android:text="Дрочить" />
+            android:text="Дрочить 5 раз в день" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
@@ -76,7 +76,7 @@
             android:backgroundTint="@color/dick"
             android:strokeColor="@color/black"
             app:cornerRadius="10dp"
-            android:text="Трахать" />
+            android:text="Трахать дико" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
