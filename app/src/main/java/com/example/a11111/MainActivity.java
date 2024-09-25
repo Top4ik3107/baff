@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("MainActivity", "val is null");
             }
         } catch (Exception e) {
-            e.printStackTrace(); // Лоауыаыание ошибкиczbzdfvdv
+            e.printStackTrace(); // Лоауыаыание ошибкиczbzddv
         }
 
     }
