@@ -41,7 +41,7 @@
 
             android:fontFamily="@font/oboto"
             android:gravity="center"
-            android:text="я ебал камаз2"
+            android:text="я ебал камаз22"
             android:textColor="@color/dick"
             android:textSize="32sp" />
 
