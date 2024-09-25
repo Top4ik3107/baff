@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView val;
+    private TextView val4;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
         try {
-            val = findViewById(R.id.textView);
-            if (val != null) {
-                ObjectAnimator animation = ObjectAnimator.ofFloat(val, "translationY", 0f, -100f, 0f);
+            val4 = findViewById(R.id.textView);
+            if (val4 != null) {
+                ObjectAnimator animation = ObjectAnimator.ofFloat(val4, "translationY", 0f, -100f, 0f);
                 animation.setDuration(1000);
                 animation.setRepeatCount(ObjectAnimator.INFINITE);
                 animation.setRepeatMode(ObjectAnimator.REVERSE);
@@ -41,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("MainActivity", "val is null");
             }
         } catch (Exception e) {
-            e.printStackTrace(); // Логирование ошибки
+            e.printStackTrace(); // Лоауыаыание ошибкиczbzddv
         }
+
     }
 }
