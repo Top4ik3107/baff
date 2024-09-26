@@ -2,8 +2,11 @@ package com.example.a11111;
 
 import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.service.voice.VoiceInteractionSession;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -44,5 +47,10 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace(); // Лоауыаыание ошибкиczbzddv
         }
 
+    }
+
+    public void ab(View view) {
+        Intent aboba = new Intent(MainActivity.this, MainActivity2.class);
+        startActivity(aboba);
     }
 }
