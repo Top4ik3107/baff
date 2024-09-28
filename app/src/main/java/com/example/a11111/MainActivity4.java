@@ -1,7 +1,9 @@
 package com.example.a11111;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -33,5 +35,10 @@ public class MainActivity4 extends AppCompatActivity {
 //
 //        // Загрузка URL с видео
      //   myWebView.loadUrl("https://youtu.be/GpsuggEpQEQ?si=Edl9-zhkmCINr98j"); // Замените на нужный вам URL с видео
+    }
+
+    public void abbg(View view) {
+        Intent abobaa = new Intent(MainActivity4.this, MainActivity5.class);
+        startActivity(abobaa);
     }
 }

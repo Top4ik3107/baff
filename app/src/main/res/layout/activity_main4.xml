@@ -7,32 +7,76 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity4"
     android:background="@color/grey"
+    android:padding="20dp"
 
     >
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <RatingBar
-            android:id="@+id/ratingBar2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:numStars="5"
-            android:rating="0"
-            android:stepSize="1"
-
-
-            />
-
-        <VideoView
-            android:id="@+id/videoView3"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp" />
-    </LinearLayout>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                >
+
+                <RatingBar
+                    android:id="@+id/ratingBar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1"
+
+
+                    />
+
+                <VideoView
+                    android:id="@+id/videoView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:cardCornerRadius="400dp"
+                    android:background="@color/white"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/b867ea65a1ee5f280a9172c0f0d927d6"
+                        android:scaleType="fitXY"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Вперёд"
+                    android:onClick="abbg"
+                    app:cornerRadius="10dp"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
