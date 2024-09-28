@@ -60,39 +60,50 @@
                 <TextView
                     android:id="@+id/textView15"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
                     android:layout_weight="1"
-                    android:fontFamily="@font/oboto"
-                    android:text="TextView"
-                    android:textColor="@color/black" />
+                    android:textSize="16sp"
+
+                    android:fontFamily="@font/boto"
+                    android:text="Сварщик"
+                    android:textColor="@color/black"
+                    />
 
                 <TextView
                     android:id="@+id/textView14"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
                     android:layout_weight="1"
-                    android:fontFamily="@font/oboto"
-                    android:text="TextView"
+                    android:fontFamily="@font/boto"
+                    android:text="Строитель"
+                    android:textSize="16sp"
+
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/oboto"
-                    android:text="TextView"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/boto"
+                    android:textSize="16sp"
+                    android:text="Полиция"
                     android:textColor="@color/black" />
             </LinearLayout>
         </FrameLayout>
 
         <FrameLayout
-            android:background="@drawable/roundgraybord"
+
+            android:id="@+id/kudadobovlat"
             android:layout_width="match_parent"
             android:layout_height="500dp"
             android:layout_margin="20dp"
 
 
-            >
+            android:background="@drawable/roundgraybord">
+
 
         </FrameLayout>
 
@@ -100,7 +111,7 @@
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            
             android:background="@drawable/round"
 
             >
@@ -111,6 +122,7 @@
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@drawable/roundgray"
+                android:onClick="ghh"
                 android:gravity="center"
 
                 >
@@ -121,7 +133,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="TextView"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/dick" />
             </FrameLayout>
         </FrameLayout>
 

@@ -77,6 +77,7 @@
             android:backgroundTint="@color/dick"
             android:strokeColor="@color/black"
             app:cornerRadius="10dp"
+            android:onClick="abb"
             android:text="Трахать дико" />
     </LinearLayout>
 
