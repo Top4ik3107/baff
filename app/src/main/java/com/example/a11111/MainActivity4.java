@@ -2,11 +2,13 @@ package com.example.a11111;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.VideoView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,19 +28,25 @@ public class MainActivity4 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-//        WebView myWebView = findViewById(R.id.videoView3);
-//        myWebView.setWebViewClient(new WebViewClient()); // Чтобы открывать ссылки внутри WebView
-//
-//        // Настройки WebView
-//        WebSettings webSettings = myWebView.getSettings();
-//        webSettings.setJavaScriptEnabled(true); // Включите JavaScript, если нужно
-//
-//        // Загрузка URL с видео
-     //   myWebView.loadUrl("https://youtu.be/GpsuggEpQEQ?si=Edl9-zhkmCINr98j"); // Замените на нужный вам URL с видео
+       VideoView myWebView = findViewById(R.id.videoView3);
+       String vidp = "android.resource://" + getPackageName() + "/" + R.raw.vid;
+       myWebView.setVideoURI(Uri.parse(vidp));
+       myWebView.start();
+
+
+
+
     }
 
     public void abbg(View view) {
         Intent abobaa = new Intent(MainActivity4.this, MainActivity5.class);
         startActivity(abobaa);
+    }
+
+    public void play(View view) {
+        VideoView myWebView = findViewById(R.id.videoView3);
+        String vidp = "android.resource://" + getPackageName() + "/" + R.raw.vid;
+        myWebView.setVideoURI(Uri.parse(vidp));
+        myWebView.start();
     }
 }

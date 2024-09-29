@@ -46,7 +46,10 @@
                 <VideoView
                     android:id="@+id/videoView3"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp" />
+                    android:layout_height="200dp"
+
+
+                    />
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -57,6 +60,7 @@
 
                     <ImageView
                         android:id="@+id/imageView8"
+                        android:onClick="play"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         app:srcCompat="@drawable/b867ea65a1ee5f280a9172c0f0d927d6"
