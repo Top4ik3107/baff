@@ -88,13 +88,25 @@
                 </androidx.cardview.widget.CardView>
 
                 <Button
+                    android:id="@+id/button9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ох зря ты сюда нажал!!!"
+                    android:layout_marginTop="50dp"
+
+                    android:backgroundTint="#313131"
+                    android:alpha="0.09"
+                    android:onClick="fhj"
+                    />
+
+                <Button
                     android:id="@+id/button7"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:text="Вперёд"
                     android:layout_gravity="bottom"
                     android:onClick="abbg"
-                    android:layout_marginTop="240dp"
+                    android:layout_marginTop="130dp"
                     app:cornerRadius="10dp"
 
                     />

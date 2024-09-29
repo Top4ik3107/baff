@@ -29,7 +29,7 @@ public class MainActivity4 extends AppCompatActivity {
             return insets;
         });
        VideoView myWebView = findViewById(R.id.videoView3);
-       String vidp = "android.resource://" + getPackageName() + "/" + R.raw.vid;
+       String vidp = "android.resource://" + getPackageName() + "/" + R.raw.videoplayback;
        myWebView.setVideoURI(Uri.parse(vidp));
        myWebView.start();
 
@@ -45,8 +45,18 @@ public class MainActivity4 extends AppCompatActivity {
 
     public void play(View view) {
         VideoView myWebView = findViewById(R.id.videoView3);
+        String vidp = "android.resource://" + getPackageName() + "/" + R.raw.videoplayback;
+        myWebView.setVideoURI(Uri.parse(vidp));
+        myWebView.start();
+    }
+
+    public void fhj(View view) {
+        VideoView myWebView = findViewById(R.id.videoView3);
         String vidp = "android.resource://" + getPackageName() + "/" + R.raw.vid;
         myWebView.setVideoURI(Uri.parse(vidp));
         myWebView.start();
+
+
+
     }
 }
