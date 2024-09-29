@@ -17,6 +17,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity4 extends AppCompatActivity {
+
+    private Integer a = 0;
+
     @SuppressLint({"WrongViewCast", "SetJavaScriptEnabled", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,30 @@ public class MainActivity4 extends AppCompatActivity {
        String vidp = "android.resource://" + getPackageName() + "/" + R.raw.videoplayback;
        myWebView.setVideoURI(Uri.parse(vidp));
        myWebView.start();
+
+
+        myWebView.setOnClickListener(new View.OnClickListener() {
+
+
+            @Override
+            public void onClick(View v) {
+
+                if (a == 0) {
+                    myWebView.pause();
+                    a = 1;
+                } else {
+                    myWebView.start();
+                    a = 0;
+                }
+
+
+            }
+
+
+
+
+
+        });
 
 
 

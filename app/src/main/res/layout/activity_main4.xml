@@ -46,6 +46,7 @@
                     />
 
                 <VideoView
+                    android:onClick="vb"
                     android:id="@+id/videoView3"
                     android:layout_width="match_parent"
                     android:layout_height="240dp"
