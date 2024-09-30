@@ -60,6 +60,7 @@
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="350dp"
+            android:onClick="abbf"
             app:srcCompat="@drawable/enginner" />
 
         <Button

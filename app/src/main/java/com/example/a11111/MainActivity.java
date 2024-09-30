@@ -64,4 +64,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(aboba);
 
     }
+
+    public void abbf(View view) {
+        Intent aboba = new Intent(MainActivity.this, MainActivity6.class);
+        startActivity(aboba);
+    }
 }

@@ -15,6 +15,21 @@
         android:theme="@style/Theme._11111"
         tools:targetApi="31">
         <activity
+            android:name=".mge4"
+            android:exported="false" />
+        <activity
+            android:name=".mge3"
+            android:exported="false" />
+        <activity
+            android:name=".mge2"
+            android:exported="false" />
+        <activity
+            android:name=".mge"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity6"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity5"
             android:exported="false" />
         <activity
