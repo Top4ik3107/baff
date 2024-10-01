@@ -1,6 +1,8 @@
 package com.example.a11111;
 
+import android.net.Uri;
 import android.os.Bundle;
+import android.widget.VideoView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,12 @@ public class mge2 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        VideoView myWebView = findViewById(R.id.mge2);
+        String vidp = "android.resource://" + getPackageName() + "/" + R.raw.mge;
+        myWebView.setVideoURI(Uri.parse(vidp));
+        myWebView.start();
+
+
+
     }
 }

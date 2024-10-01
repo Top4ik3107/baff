@@ -19,38 +19,40 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioGroup
+            android:id="@+id/radio2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <RadioButton
-                android:id="@+id/radioButton6"
+                android:id="@+id/radio6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="штрафбат"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
             <RadioButton
-                android:id="@+id/radioButton7"
+                android:id="@+id/radio7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="я иду за вами"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
             <RadioButton
-                android:id="@+id/radioButton9"
+                android:id="@+id/radio9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="мужчины"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
             <RadioButton
-                android:id="@+id/radioButton10"
+                android:id="@+id/radio10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="специалист"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
             <FrameLayout
+                android:id="@+id/block"
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
                 android:background="@drawable/roundgraybord">
