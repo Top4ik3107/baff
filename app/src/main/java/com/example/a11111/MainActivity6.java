@@ -1,9 +1,11 @@
 package com.example.a11111;
 
 import android.annotation.SuppressLint;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.VideoView;
 import android.widget.RadioGroup;
 
 import androidx.activity.EdgeToEdge;
@@ -17,7 +19,6 @@ public class MainActivity6 extends AppCompatActivity {
     private RadioGroup radioGroup;
     private FrameLayout container;
 
-    @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,31 +33,59 @@ public class MainActivity6 extends AppCompatActivity {
 
         radioGroup = findViewById(R.id.radio2);
         container = findViewById(R.id.block); // Initialize the container once
+    }
 
-        radioGroup.setOnCheckedChangeListener((group, checkedId) -> {
-            int layoutId = 0; // Initialize layoutId
+    public void sq(View view) {
+        loadLayout(R.layout.activity_mge, container);
+    }
 
-            switch (checkedId) {
-                case R.id.radio6:
-                    layoutId = R.layout.activity_mge;
-                    break;
-                case R.id.radio7:
-                    layoutId = R.layout.activity_mge2;
-                    break;
-                case R.id.radio9:
-                    layoutId = R.layout.activity_mge3;
-                    break;
-                case R.id.radio10:
-                    layoutId = R.layout.activity_mge4;
-                    break;
+    public void sw(View view) {
+        loadLayout(R.layout.activity_mge2, container);
+    }
+
+    public void se(View view) {
+        loadLayout(R.layout.activity_mge3, container);
+    }
+
+    public void sr(View view) {
+        loadLayout(R.layout.activity_mge4, container);
+    }
+
+    private void loadLayout(int layoutResId, FrameLayout container) {
+        if (container != null) {
+            container.removeAllViews();
+            View view = getLayoutInflater().inflate(layoutResId, container, false);
+            container.addView(view);
+
+            // Запустите код из mge после инфляции
+            if (layoutResId == R.layout.activity_mge) {
+                VideoView myWebView = view.findViewById(R.id.mge);
+                String vidp = "android.resource://" + getPackageName() + "/" + R.raw.shtraf;
+                myWebView.setVideoURI(Uri.parse(vidp));
+                myWebView.start();
+            }
+            if (layoutResId == R.layout.activity_mge2) {
+                VideoView myWebView = view.findViewById(R.id.mge);
+                String vidp = "android.resource://" + getPackageName() + "/" + R.raw.foryou;
+                myWebView.setVideoURI(Uri.parse(vidp));
+                myWebView.start();
+            }
+            if (layoutResId == R.layout.activity_mge3) {
+                VideoView myWebView = view.findViewById(R.id.mge);
+                String vidp = "android.resource://" + getPackageName() + "/" + R.raw.mge;
+                myWebView.setVideoURI(Uri.parse(vidp));
+                myWebView.start();
+            }
+            if (layoutResId == R.layout.activity_mge4) {
+                VideoView myWebView = view.findViewById(R.id.mge);
+                String vidp = "android.resource://" + getPackageName() + "/" + R.raw.special;
+                myWebView.setVideoURI(Uri.parse(vidp));
+                myWebView.start();
             }
 
-            // If a valid layoutId is set, inflate and add the view
-            if (layoutId != 0) {
-                container.removeAllViews();
-                View view = getLayoutInflater().inflate(layoutId, container, false);
-                container.addView(view);
-            }
-        });
+
+
+
+        }
     }
 }

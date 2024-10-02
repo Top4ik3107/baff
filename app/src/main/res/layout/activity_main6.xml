@@ -21,44 +21,49 @@
         <RadioGroup
             android:id="@+id/radio2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/radio6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="штрафбат"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:onClick="sq"/>
 
             <RadioButton
                 android:id="@+id/radio7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="я иду за вами"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:onClick="sw"/>
 
             <RadioButton
                 android:id="@+id/radio9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="мужчины"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:onClick="se"/>
 
             <RadioButton
                 android:id="@+id/radio10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="специалист"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:onClick="sr"/>
 
-            <FrameLayout
-                android:id="@+id/block"
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:background="@drawable/roundgraybord">
-
-            </FrameLayout>
         </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/block"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/roundgraybord">
+
+        </FrameLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
