@@ -39,7 +39,7 @@
             android:layout_width="316dp"
             android:layout_height="73dp"
 
-            android:fontFamily="@font/oboto"
+            android:fontFamily="@font/light"
             android:gravity="center"
             android:text="я ебал камаз"
             android:textColor="@color/dick"
@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alpha="0.3"
-            android:fontFamily="@font/boto"
+            android:fontFamily="@font/regular"
             android:gravity="center"
             android:text="Я ебал слона"
             android:textColor="@color/white"

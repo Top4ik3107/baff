@@ -65,7 +65,7 @@
                     android:layout_weight="1"
                     android:textSize="16sp"
 
-                    android:fontFamily="@font/boto"
+                    android:fontFamily="@font/regular"
                     android:text="Сварщик"
                     android:textColor="@color/black"
                     />
@@ -76,7 +76,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
                     android:layout_weight="1"
-                    android:fontFamily="@font/boto"
+                    android:fontFamily="@font/regular"
                     android:text="Строитель"
                     android:textSize="16sp"
 
@@ -87,7 +87,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
-                    android:fontFamily="@font/boto"
+                    android:fontFamily="@font/regular"
                     android:textSize="16sp"
                     android:text="Полиция"
                     android:textColor="@color/black" />
